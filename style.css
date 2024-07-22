@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+/* varibles */
+
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #18181b;
+    
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.nav-logo a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-logo a{
+    max-width: 64px;
+}
+.nav-logo p {
+    font-weight: bold;
+    font-size: 4.0rem;
+    color: aliceblue;
+    padding-left: 16px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.72rem;
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease; 
+}
+.link a:hover::after {
+    width: 80%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+    background-color: #1d4ed8;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+/* seccrtion header */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 16px;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 10000px 50px #1d4ed8;
+    z-index: -100;
+}
+header {
+    position: relative;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+header .content h4{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: aliceblue;
+    margin-bottom: 24px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+}
+
+header .content p {
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    /* z-index: -100; */
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+}
+/* secione servicios y productos */
+section .header {
+    margin-bottom: 1rem;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: #27272a;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: aliceblue;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #1d40af;
+    padding: 2px 9px;
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+.features .card h4{
+    margin-bottom: 0.8rem;
+    color: aliceblue;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.features .card p {
+    color: aliceblue;
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+}
+.features .card a {
+    color: aliceblue;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.features .card a:hover {
+    color: #1d40af;
+}
+
+/* Pricing maquetacions */
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.4rem;
+}
